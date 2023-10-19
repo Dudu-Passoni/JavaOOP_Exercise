@@ -33,9 +33,9 @@ public class Caneta {
     public void status() {
             System.out.println("modelo: " + this.getModelo());
             System.out.print("Uma caneta " + this.getCor());
-            System.out.println(" Ponta: " + this.ponta);
-            System.out.println("Carga:" + this.carga);
-            System.out.println("está tampada? " + this.tampada);
+            System.out.println(" Ponta: " + this.getPonta());
+            System.out.println("Carga: " + this.getCarga());
+            System.out.println("está tampada? " + this.isTampada());
     }
     //Métodos especiais:
     
@@ -61,9 +61,22 @@ public class Caneta {
     public void setCarga(int carga) {
         this.carga = carga;
     }
-
     public int getCarga() {
         return carga;
+    }
+
+    public float getPonta() {
+        return ponta;
+    }
+    public void setPonta(float ponta) {
+        this.ponta = ponta;
+    }
+
+    public boolean isTampada() {
+        return tampada;
+    }
+    public void setTampada(boolean tampada) {
+        this.tampada = tampada;
     }
     
     
