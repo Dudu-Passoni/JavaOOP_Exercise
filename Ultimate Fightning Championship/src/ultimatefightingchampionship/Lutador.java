@@ -6,10 +6,13 @@ public class Lutador {
     private float altura, peso;
 
     public void apresentar(){
-        System.out.println("*");
+        System.out.println("Apresentando "+ this.getNome());
+        System.out.println("Diretamente de "+ this.getNacionalidade());
+        System.out.println("Ele possui: "+ this.getVitorias() + " Vitorias, " + this.getDerrotas() + " Derrotas e "+ this.getEmpates() + " Empates.");
+        System.out.println("*********************************");
     }
     public void Status(){
-        System.out.println("*");
+        System.out.println("");
     }
     public void ganharluta(){
         this.setVitorias(this.getVitorias() + 1);
